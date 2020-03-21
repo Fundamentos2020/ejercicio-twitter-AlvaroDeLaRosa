@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Twitter</title>
+    <style>
+        textarea {
+            border: solid 1px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h1>Local Storage</h1>
-        <div>
-            <div>
-                <form action="#">
-                    <label for="tweet">Tweet:</label>
-                    <textarea name="tweet"></textarea>
-                    <button>Agregar</button>
+    <div class="container">
+        <h1 class="text-center">Local Storage</h1>
+        <div class="row">
+            <div class="col-m-6 col-s-12">
+                <label for="tweet">Tweet:</label>
+                <form action="#" id="formulario">
+                    <label for="tweet"></label>
+                    <textarea id="tweet" class="w-100"></textarea>
+                    <button type="submit" id="agregar">Agregar</button>
                 </form>
             </div>
-            <div>
-                <h2>Mis Tweets</h2>
-                <div></div>
+            <div class="col-m-6 col-s-12">
+                <h2 class="text-center">Mis Tweets</h2>
+                <div id="lista-tweets">
+                </div>
             </div>
         </div>
     </div>
-
     <script src="app.js"></script>
+    <div class="w-m-75 w-s-100 backC1 text-center">
+        <b>282816 - De la Rosa Ipiña Juan Alvaro</b>
+    </div>
 </body>
 </html>
